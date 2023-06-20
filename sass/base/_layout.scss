@@ -1,0 +1,23 @@
+.content {
+  display: flex;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 0 19%;
+  background-color: var(--secondary-color-dark);
+}
+
+.sidebar-none {
+  display: none;
+}
+.hide {
+  display: none;
+}
+.top-view {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 1;
+}

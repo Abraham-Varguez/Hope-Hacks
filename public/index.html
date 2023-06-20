@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <div class="content">
+      <!-- -----------------------------SIDE NAV-------------------------------------- -->
+      <div class="nav-container">
+        <svg class="nav-open nav-logo">
+          <use href="/img/sprite.svg#icon-menu"></use>
+        </svg>
+      </div>
+      <nav class="sidebar-none">
+        <svg class="nav-close nav-logo">
+          <use href="/img/sprite.svg#icon-cross"></use>
+        </svg>
+        <ul class="side-nav">
+          <li class="side-nav__item side-nav__item--home">
+            <a href="/public/index.html" class="side-nav__link">
+              <svg class="side-nav__icon">
+                <use href="/img/sprite.svg#icon-home"></use>
+              </svg>
+              <span>Home</span>
+            </a>
+          </li>
+          <li class="side-nav__item">
+            <a href="/public/api.html" class="side-nav__link">
+              <svg class="side-nav__icon">
+                <use href="/img/sprite.svg#icon-spoon-knife"></use>
+              </svg>
+              <span>Meal Plans</span>
+            </a>
+          </li>
+          <li class="side-nav__item side-nav__item--cp">
+            <a href="/public/contact.html" class="side-nav__link">
+              <svg class="side-nav__icon">
+                <use href="/img/sprite.svg#icon-envelop"></use>
+              </svg>
+              <span>Contact Page</span>
+            </a>
+          </li>
+          <li class="side-nav__item side-nav__item--t">
+            <a href="#" class="side-nav__link">
+              <svg class="side-nav__icon">
+                <use href="/img/sprite.svg#icon-users"></use>
+              </svg>
+              <span>Meet Our Team</span>
+            </a>
+          </li>
+        </ul>
+        <div class="legal">
+          &copy;2023 Live 2 Progress. All rights reserved.
+        </div>
+      </nav>
+      <!-- ------------------------------------Hero Content---------------------------- -->
+      <main class="top-view">
+        <header class="img-header">
+          <a href="/public/login.html" class="btn-login">Login</a>
+          <div class="img-header__text-box">
+            <h1 class="h1-heading">
+              <span class="h1-heading__title">Live 2 Progress</span>
+              <span class="h1-heading__sub-title"
+                >Better Choices. Better Living
+              </span>
+            </h1>
+            <a href="#card-j" class="btn btn--red btn--animated smooth-scroll"
+              >Discover Our Plans</a
+            >
+          </div>
+        </header>
+      </main>
+    </div>
+    <!-- ------------------------------------Feature Content---------------------------- -->
+    <section class="feature-section">
+      <h2 class="h2-title">Our Main Features</h2>
+      <div class="features">
+        <div class="feature">
+          <img
+            class="feature-img"
+            src="/img/h-image/apple.png"
+            alt="fit-apple-feature"
+          />
+          <p class="fet-p">Eating Smarter</p>
+        </div>
+        <div class="feature">
+          <img
+            class="feature-img"
+            src="/img/h-image/heart.png"
+            alt="heart-feature"
+          />
+          <p class="fet-p">Fitness Therapy</p>
+        </div>
+        <div class="feature">
+          <img
+            class="feature-img"
+            src="/img/h-image/track.png"
+            alt="tracking-feature"
+          />
+          <p class="fet-p">Tracking Progress</p>
+        </div>
+      </div>
+    </section>
+    <!-- ------------------------------------Testimonial Content---------------------------- -->
+    <section class="testimonial-section">
+      <h2 class="h2-title">Our Members Results</h2>
+      <div class="testimonial-section__content">
+        <div class="testimonial-section__pictures">
+          <img
+            src="/img/h-image/food.jpg"
+            alt="food"
+            class="testimonial-section__pictures__photo testimonial-section__pictures__photo--p1"
+          />
+          <img
+            src="/img/h-image/dessert.jpg"
+            alt="acai-bowl"
+            class="testimonial-section__pictures__photo testimonial-section__pictures__photo--p2"
+          />
+          <img
+            src="/img/h-image/yoga.jpg"
+            alt="yoga"
+            class="testimonial-section__pictures__photo testimonial-section__pictures__photo--p3"
+          />
+        </div>
+        <div class="testimonial-section__text-section">
+          <h3 class="h3-title">
+            You are going to fall in love with your Journey
+          </h3>
+          <p class="test-p">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+            perferendis ea deserunt sequi qui doloremque velit ullam, laudantium
+            nobis tempora facilis magnam aspernatur? Laboriosam in ipsum dolores
+            eius alias ipsam?
+          </p>
+          <h3 class="h3-title">Live your life like you never have before</h3>
+          <p class="test-p">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+            perferendis ea deserunt sequi qui doloremque velit ullam, laudantium
+            nobis tempora fa cilis magnam aspernatur? Laboriosam in ipsum
+            dolores eius alias ipsam?
+          </p>
+          <a href="#" class="btn-text">Learn More &rarr;</a>
+        </div>
+      </div>
+    </section>
+    <!-- ------------------------------------Package Content---------------------------- -->
+    <section class="plans">
+      <h2 id="card-j" class="h2-title">Plans we Offer</h2>
+      <div class="plans__container">
+        <!-- ------------------------------------Card 1---------------------------- -->
+        <div class="card card--p1">
+          <div class="card__side card__side--front card__side--front-1">
+            <div class="card__picture card__picture--1">&nbsp;</div>
+            <h4 class="card__heading">
+              <span class="card__heading-span card__heading-span--1">
+                The Cherry Package
+              </span>
+            </h4>
+            <div class="card__details">
+              <ul>
+                <li>3 day Tours</li>
+                <li>Up to 30 People</li>
+                <li>2 hour Guides</li>
+                <li>Sleep in Cozy Hotels</li>
+                <li>Easy Hotel Travel</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card__side card__side--back card__side--back-1">
+            <div class="card__cta">
+              <div class="card__price-box">
+                <p class="card__price-only">Only</p>
+                <p class="card__price-value">$150</p>
+              </div>
+              <a href="#" class="btn btn--white">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <!-- ------------------------------------Card 2---------------------------- -->
+        <div class="card card--p2">
+          <div class="card__side card__side--front card__side--front-2">
+            <div class="card__picture card__picture--2">&nbsp;</div>
+            <h4 class="card__heading">
+              <span class="card__heading-span card__heading-span--2">
+                The Apple Package
+              </span>
+            </h4>
+            <div class="card__details">
+              <ul>
+                <li>3 day Tours</li>
+                <li>Up to 30 People</li>
+                <li>2 hour Guides</li>
+                <li>Sleep in Cozy Hotels</li>
+                <li>Easy Hotel Travel</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card__side card__side--back card__side--back-2">
+            <div class="card__cta">
+              <div class="card__price-box">
+                <p class="card__price-only">Only</p>
+                <p class="card__price-value">$250</p>
+              </div>
+              <a href="#" class="btn btn--white">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <!-- ------------------------------------Card 3---------------------------- -->
+        <div class="card card--p3">
+          <div class="card__side card__side--front card__side--front-3">
+            <div class="card__picture card__picture--3">&nbsp;</div>
+            <h4 class="card__heading">
+              <span class="card__heading-span card__heading-span--3">
+                The Dragon Fruit Package
+              </span>
+            </h4>
+            <div class="card__details">
+              <ul>
+                <li>3 day Tours</li>
+                <li>Up to 30 People</li>
+                <li>2 hour Guides</li>
+                <li>Sleep in Cozy Hotels</li>
+                <li>Easy Hotel Travel</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card__side card__side--back card__side--back-3">
+            <div class="card__cta">
+              <div class="card__price-box">
+                <p class="card__price-only">Only</p>
+                <p class="card__price-value">$300</p>
+              </div>
+              <a href="#" class="btn btn--white">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="/script/design.js"></script>
+  </body>
+</html>

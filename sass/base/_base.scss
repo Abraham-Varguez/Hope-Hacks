@@ -1,0 +1,59 @@
+:root {
+  --background-color-light: #d4ccc2;
+  --background-color-dark: #d5c19c;
+  --background-color-white: #fcfcfc;
+
+  --primary-color: #9c5460;
+  --primary-color-dark: #351d21;
+  --primary-color-light: #cca3aa;
+
+  --secondary-color: #3d6433;
+  --secondary-color-dark: #283c2a;
+  --secondary-color-light: #cbceb6;
+
+  --tertiary-color: #2e476d;
+  --tertiary-color-dark: #121c2c;
+  --tertiary-color-light: #5888d5;
+
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+}
+/*
+0-600:    PHONE
+600-900: TABLET PORTRAIT
+900-1200: TABLET LANDSCAPE
+[1200 -1800] DEFAULT STYLE 
+1800+: BIG DESKTO
+*/
+
+//SASS Variables for Media Queries-----------------------
+
+/*
+1em = 16px when we are applying media queries
+EM is used for media queries 
+*/
+
+$bp-largest: 75em; //1200px-Breakpoint- BIG DESKTOP
+$bp-large: 68.75em; //1100px-Breakpoint- IPAD LANDSCAPE
+$bp-medium: 57.75em; //900px-Breakpoint-  IPAD PORTRAIT
+$bp-small: 37.5em; //600px--Breakpoint- PHONE
+$bp-smallest: 31.25em; //500px--Breakpoint- SMALL PHONE
+
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--background-color-white);
+}

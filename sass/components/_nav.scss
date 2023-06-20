@@ -1,0 +1,126 @@
+/////////////////////////////////////////////////////
+//SIDE BAR NAVIGATION
+.side-nav {
+  font-size: 2rem;
+  list-style: none;
+  margin-top: -30rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    display: flex;
+    margin: 0;
+  }
+  &__item {
+    position: relative;
+
+    &:not(:last-child) {
+      //adds margin bottom to all execpt the last child, thats it is why :not psuedo class is super helpful
+      margin-bottom: 0.5rem;
+
+      @media only screen and (max-width: $bp-medium) {
+        margin: 0;
+      }
+    }
+    @media only screen and (max-width: $bp-medium) {
+      flex: 1;
+    }
+  }
+
+  &__item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: var(--secondary-color);
+    transform: scaleY(0);
+    transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s; // WTF is Cubic Bezier   //There is website that helps you transition animations to start slow and move fast and slow down, but there are other animations as well you can tweak with cubic bezier
+  }
+
+  &__item--home::before {
+    background-color: var(--secondary-color);
+  }
+  &__item--cp::before {
+    background-color: var(--secondary-color);
+  }
+  &__item--t::before {
+    background-color: var(--secondary-color);
+  }
+
+  &__item:hover::before {
+    transform: scaleY(1);
+    width: 100%;
+  }
+
+  // &__item:active::before {
+  //   background-color: var(--color-primary-light);
+  // }
+
+  &__link:link,
+  &__link:visited {
+    color: var(--secondary-color-light);
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    padding: 1.5rem 3rem;
+    z-index: 10;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-medium) {
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+      padding: 1.5rem;
+      text-align: center;
+    }
+  }
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 2rem;
+    //Takes the color of the Parent or of the Element
+    fill: var(--secondary-color-light);
+
+    @media only screen and (max-width: $bp-small) {
+      margin-right: 0;
+      margin-bottom: 0.7rem;
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+}
+.nav-container {
+  background-color: var(--secondary-color-dark);
+}
+.nav-open {
+  cursor: pointer;
+  width: 5rem;
+  height: 5rem;
+  fill: var(--secondary-color-light);
+  background-color: var(--secondary-color-dark);
+}
+.nav-close {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  margin: 1rem;
+  fill: var(--secondary-color-light);
+}
+/////////////////////////////////////////////////////
+//LEGAL TEXT
+
+.legal {
+  font-size: 1.2rem;
+  color: var(--secondary-color-light);
+  text-align: center;
+  padding: 2.5rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    display: none;
+  }
+}

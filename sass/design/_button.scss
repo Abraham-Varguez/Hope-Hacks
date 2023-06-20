@@ -1,0 +1,112 @@
+.btn {
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.8rem 5rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    position: relative;
+    font-size: 1.8rem;
+    z-index: 0;
+    backface-visibility: hidden;
+    margin-top: 6rem;
+  }
+
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-dark);
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+
+  &--red {
+    background-color: var(--primary-color);
+    color: aliceblue;
+
+    &::after {
+      background-color: var(--primary-color);
+    }
+  }
+  &--white {
+    background-color: var(--background-color-white);
+    color: black;
+
+    &::after {
+      background-color: var(--background-color-white);
+    }
+  }
+
+  &--animated {
+    animation: moveInTop 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+  }
+}
+
+//Testimonial Secrtion
+.btn-text {
+  &:link,
+  &:visited {
+    font-size: 1.6rem;
+    color: var(--secondary-color);
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid var(--secondary-color);
+    padding: 3px;
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    background-color: var(--secondary-color);
+    color: var(--background-color-white);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+  }
+}
+
+//Login button
+.btn-login {
+  &:link,
+  &:visited {
+    font-size: 2rem;
+    font-weight: 500;
+    color: aliceblue;
+    text-decoration: none;
+    border: 2px solid aliceblue;
+    border-radius: 20px;
+    padding: 1rem 2.2rem;
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    background-color: aliceblue;
+    color: black;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+  }
+  position: absolute;
+  left: 85%;
+  top: 4%;
+}

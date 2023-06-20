@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foods Dictionary</title>
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body class="a-background">
+    <div class="content">
+      <!-- -----------------------------SIDE NAV-------------------------------------- -->
+      <div class="nav-container">
+        <svg class="nav-open nav-logo">
+          <use href="/img/sprite.svg#icon-menu"></use>
+        </svg>
+      </div>
+      <nav class="sidebar-none">
+        <svg class="nav-close nav-logo">
+          <use href="/img/sprite.svg#icon-cross"></use>
+        </svg>
+        <ul class="side-nav">
+          <li class="side-nav__item side-nav__item--home">
+            <a href="/public/index.html" class="side-nav__link">
+              <svg class="side-nav__icon">
+                <use href="/img/sprite.svg#icon-home"></use>
+              </svg>
+              <span>Home</span>
+            </a>
+          </li>
+          <li class="side-nav__item">
+            <a href="/public/api.html" class="side-nav__link">
+              <svg class="side-nav__icon">
+                <use href="/img/sprite.svg#icon-spoon-knife"></use>
+              </svg>
+              <span>Meal Plans</span>
+            </a>
+          </li>
+          <li class="side-nav__item side-nav__item--cp">
+            <a href="/public/contact.html" class="side-nav__link">
+              <svg class="side-nav__icon">
+                <use href="/img/sprite.svg#icon-envelop"></use>
+              </svg>
+              <span>Contact Page</span>
+            </a>
+          </li>
+          <li class="side-nav__item side-nav__item--t">
+            <a href="#" class="side-nav__link">
+              <svg class="side-nav__icon">
+                <use href="/img/sprite.svg#icon-users"></use>
+              </svg>
+              <span>Meet Our Team</span>
+            </a>
+          </li>
+        </ul>
+        <div class="legal">
+          &copy;2023 Live 2 Progress. All rights reserved.
+        </div>
+      </nav>
+      <!-- ------------------------------------Hero Content---------------------------- -->
+      <main class="top-view">
+        <header class="a-img-header">
+          <a href="/public/login.html" class="btn-login">Login</a>
+          <div class="a-img-header__text-box">
+            <h1 class="a-h1-heading">
+              <span class="a-h1-heading__title">Meal Plans</span>
+              <span class="a-h1-heading__sub-title"
+                >A Real Time Food Dictionary
+              </span>
+              <span class="a-h1-heading__sub-title">Search down below </span>
+            </h1>
+          </div>
+        </header>
+      </main>
+    </div>
+    <section>
+      <div class="container">
+        <h1 class="brand">Recipe</h1>
+        <form>
+          <input type="text" placeholder="search your Recipe..." />
+        </form>
+        <div class="search-result"></div>
+      </div>
+    </section>
+    <script src="/script/index.js"></script>
+    <script src="/script/design.js"></script>
+  </body>
+</html>

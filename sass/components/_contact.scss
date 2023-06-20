@@ -1,0 +1,82 @@
+.c-title {
+  text-align: center;
+  padding: 40px 0;
+  color: #283c2a;
+  font-size: 24px;
+  font-weight: bold;
+}
+.c-message {
+  text-align: center;
+  color: #283c2a;
+}
+.c-container {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 40px;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+.form-field {
+  position: relative;
+  margin-bottom: 30px;
+}
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  outline: none;
+  transition: border-color 0.3s;
+}
+.form-field input:focus,
+.form-field textarea:focus {
+  border-bottom-color: #000;
+}
+.form-field label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+.form-field input:focus ~ label,
+.form-field textarea:focus ~ label,
+.form-field input:not(:placeholder-shown) ~ label,
+.form-field textarea:not(:placeholder-shown) ~ label {
+  top: -10px;
+  left: 0;
+  font-size: 12px;
+  color: #000;
+}
+.form-field textarea {
+  resize: vertical;
+  height: 120px;
+}
+.form-field .submit-btn {
+  display: inline-block;
+  background-color: #283c2a;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.form-field .submit-btn:hover {
+  background-color: #333;
+}
+/*Start of the footer*/
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #283c2a;
+  height: auto;
+  width: 100vw;
+  padding-top: 40px;
+  color: #dccebb;
+}
