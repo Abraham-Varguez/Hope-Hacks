@@ -79,6 +79,9 @@
   height: 100%;
   font-size: 1.8rem;
   font-weight: 500;
+  outline: none;
+  border: none;
+  background-color: var(--background-color-white);
 }
 
 .input-box label {
@@ -125,6 +128,7 @@
   height: 5rem;
   border-radius: 6px;
   font-weight: 600;
+  color: var(--background-color-white);
 }
 
 .login-register {

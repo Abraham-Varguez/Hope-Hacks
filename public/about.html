@@ -9,19 +9,80 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <title>About Us</title>
   </head>
-  <body>
+  <body class="about-body">
+    <div class="content">
+      <!-- -----------------------------SIDE NAV-------------------------------------- -->
+      <div class="nav-container">
+        <svg class="nav-open nav-logo">
+          <use href="/img/sprite.svg#icon-menu"></use>
+        </svg>
+      </div>
+      <nav class="sidebar-none">
+        <svg class="nav-close nav-logo">
+          <use href="/img/sprite.svg#icon-cross"></use>
+        </svg>
+        <ul class="side-nav">
+          <li class="side-nav__item side-nav__item--home">
+            <a href="/public/index.html" class="side-nav__link">
+              <svg class="side-nav__icon">
+                <use href="/img/sprite.svg#icon-home"></use>
+              </svg>
+              <span>Home</span>
+            </a>
+          </li>
+          <li class="side-nav__item">
+            <a href="/public/api.html" class="side-nav__link">
+              <svg class="side-nav__icon">
+                <use href="/img/sprite.svg#icon-spoon-knife"></use>
+              </svg>
+              <span>Meal Plans</span>
+            </a>
+          </li>
+          <li class="side-nav__item side-nav__item--cp">
+            <a href="/public/contact.html" class="side-nav__link">
+              <svg class="side-nav__icon">
+                <use href="/img/sprite.svg#icon-envelop"></use>
+              </svg>
+              <span>Contact Page</span>
+            </a>
+          </li>
+          <li class="side-nav__item side-nav__item--t">
+            <a href="/public/about.html" class="side-nav__link">
+              <svg class="side-nav__icon">
+                <use href="/img/sprite.svg#icon-users"></use>
+              </svg>
+              <span>Meet Our Team</span>
+            </a>
+          </li>
+        </ul>
+        <div class="legal">
+          &copy;2023 Live 2 Progress. All rights reserved.
+        </div>
+      </nav>
+      <!-- ------------------------------------Hero Content---------------------------- -->
+      <main class="top-view">
+        <header class="ab-img-header">
+          <a href="/public/login.html" class="btn-login">Login</a>
+          <div class="ab-img-header__text-box">
+            <h1 class="h1-heading">
+              <span class="ab-h1-heading__title">The People Behind Live 2 Progress</span>
+              <span class="ab-h1-heading__sub-title">We are here for you! Discover why below</span>
+            </h1>
+          </div>
+        </header>
+      </main>
+    </div>
     <section>
       <div class="heading">
         <h1>About Us</h1>
       </div>
     </section>
-
     <section class="middle-section">
       <div class="middle-container">
         <img
-          src="food2.jpeg"
+          src="/img/contact-about/food2.jpeg"
           class="section-middle-image"
           alt="background image?"
         />
@@ -52,7 +113,7 @@
         <div class="ab-cards__front">
           <img
             class="ab-cards__image"
-            src="john.jpeg"
+            src="/img/contact-about/john.jpeg"
             alt="Johnson Doe picture"
           />
           <h1 class="ab-cards__artist" tabindex="0">Johnson Doe</h1>
@@ -73,7 +134,7 @@
         <div class="ab-cards__front">
           <img
             class="ab-cards__image"
-            src="abraham.jpeg"
+            src="/img/contact-about/abraham.jpeg"
             alt="Abraham Varguez"
           />
           <h1 class="ab-cards__artist" tabindex="0">Abraham Varguez</h1>
@@ -92,7 +153,11 @@
 
       <div class="ab-cards__single">
         <div class="ab-cards__front">
-          <img class="ab-cards__image" src="killis.jpeg" alt="" />
+          <img
+            class="ab-cards__image"
+            src="/img/contact-about/killis.jpeg"
+            alt=""
+          />
           <h1 class="ab-cards__artist" tabindex="0">Kellis Sommerville</h1>
         </div>
         <div class="ab-cards__back">
@@ -111,7 +176,7 @@
         <div class="ab-cards__front">
           <img
             class="ab-cards__image"
-            src="miguel.jpeg"
+            src="/img/contact-about/miguel.jpeg"
             alt="Leon Bridges album"
           />
           <h1 class="ab-cards__name" tabindex="0">Miguel Urdaneta</h1>
@@ -166,5 +231,6 @@
       </div>
     </footer>
     <script src="/script/about.js"></script>
+    <script src="/script/design.js"></script>
   </body>
 </html>

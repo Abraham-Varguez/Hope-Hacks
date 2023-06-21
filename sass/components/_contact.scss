@@ -1,12 +1,64 @@
+// Hero Image----------------------------------------------------------------------------------------------------------------------------------------------------------
+.contact-body {
+  background-image: linear-gradient(
+    var(--background-color-light),
+    var(--background-color-dark)
+  );
+}
+
+.c-img-header {
+  background: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.442),
+      rgba(0, 0, 0, 0.512)
+    ),
+    url("/img/contact-about/connect.jpg");
+  height: 96vh;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  //-webkit- needs to be used so it can work in every browser since the property is new to modern CSS
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  width: auto;
+  position: relative;
+
+  &__text-box {
+    position: absolute;
+    top: 25%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 50vw;
+  }
+}
+
+.c-h1-heading {
+  display: flex;
+  flex-direction: column;
+  color: var(--background-color-white);
+
+  &__title {
+    font-size: 10rem;
+    font-weight: 400;
+    animation: moveInLeft 1s ease-out;
+  }
+  &__sub-title {
+    font-size: 2rem;
+    margin-top: 2rem;
+    font-weight: 300;
+    animation: moveInRight 1s ease-out;
+  }
+}
+
 /* Header */
 .c-heading {
-  width: 90%;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   text-align: center;
-  margin: 20px;
+  margin-top: 5rem;
 }
 
 .c-heading h1 {
@@ -36,12 +88,13 @@
 
 /* Contact form */
 .contact-form {
-  background: rgba(27, 31, 34, 0.8);
+  background: rgba(34, 51, 40, 0.8);
   /* width: 600px; */
   /* margin: 50px auto; */
   max-width: 100%;
   border-radius: 4px;
   padding: 55px 30px;
+  color: var(--background-color-white);
 }
 .contact-form .title h2 {
   letter-spacing: 6px;
@@ -97,7 +150,6 @@
 }
 
 .contact-form .action input {
-  background: transparent;
   border-radius: 4px;
   border: 1px solid white;
   cursor: pointer;
@@ -145,12 +197,13 @@
   left: 0%;
 }
 
-.middle-info {
+.c-middle-info {
   width: 50%;
   height: 100%;
-  background: #fff;
+  background: #030802;
   display: block;
   margin-left: auto;
+  padding: 50px;
   text-align: center;
 }
 
@@ -194,21 +247,18 @@ a {
 /* newsletter */
 .box {
   position: relative;
-  margin-bottom: 75vh;
-  top: 55vh;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 500px;
+  margin: 20rem 45rem;
+  width: 60rem;
   text-align: center;
   border-radius: 5px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
-.box h2 {
+.news-form h2 {
   color: black;
   font-size: 40px;
   text-transform: uppercase;
-  margin: 0;
+  margin-bottom: 3rem;
   font-weight: 700;
   letter-spacing: 10px;
 }
@@ -228,12 +278,21 @@ a {
   background: #fff;
 }
 
-.box button {
+.news-form button {
   color: #fff;
   font-size: 18px;
   text-transform: uppercase;
   border: none;
   border-radius: 5px;
   padding: 15px 15px;
-  background: #283c2a;
+  background: var(--secondary-color-dark);
+}
+
+.news-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50vh;
+  background-color: var(--primary-color-light);
 }

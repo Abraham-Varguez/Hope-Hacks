@@ -4,14 +4,78 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="contact.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <title>Contact</title>
   </head>
-  <body>
+  <body class="contact-body">
+    <div class="content">
+      <!-- -----------------------------SIDE NAV-------------------------------------- -->
+      <div class="nav-container">
+        <svg class="nav-open nav-logo">
+          <use href="/img/sprite.svg#icon-menu"></use>
+        </svg>
+      </div>
+      <nav class="sidebar-none">
+        <svg class="nav-close nav-logo">
+          <use href="/img/sprite.svg#icon-cross"></use>
+        </svg>
+        <ul class="side-nav">
+          <li class="side-nav__item side-nav__item--home">
+            <a href="/public/index.html" class="side-nav__link">
+              <svg class="side-nav__icon">
+                <use href="/img/sprite.svg#icon-home"></use>
+              </svg>
+              <span>Home</span>
+            </a>
+          </li>
+          <li class="side-nav__item">
+            <a href="/public/api.html" class="side-nav__link">
+              <svg class="side-nav__icon">
+                <use href="/img/sprite.svg#icon-spoon-knife"></use>
+              </svg>
+              <span>Meal Plans</span>
+            </a>
+          </li>
+          <li class="side-nav__item side-nav__item--cp">
+            <a href="/public/contact.html" class="side-nav__link">
+              <svg class="side-nav__icon">
+                <use href="/img/sprite.svg#icon-envelop"></use>
+              </svg>
+              <span>Contact Page</span>
+            </a>
+          </li>
+          <li class="side-nav__item side-nav__item--t">
+            <a href="/public/about.html" class="side-nav__link">
+              <svg class="side-nav__icon">
+                <use href="/img/sprite.svg#icon-users"></use>
+              </svg>
+              <span>Meet Our Team</span>
+            </a>
+          </li>
+        </ul>
+        <div class="legal">
+          &copy;2023 Live 2 Progress. All rights reserved.
+        </div>
+      </nav>
+      <!-- ------------------------------------Hero Content---------------------------- -->
+      <main class="top-view">
+        <header class="c-img-header">
+          <a href="/public/login.html" class="btn-login">Login</a>
+          <div class="c-img-header__text-box">
+            <h1 class="h1-heading">
+              <span class="c-h1-heading__title">
+                Get Connected. Contact Us.
+              </span>
+              <span class="c-h1-heading__sub-title">
+                Subscribe to our Newsletter below</span
+              >
+            </h1>
+          </div>
+        </header>
+      </main>
+    </div>
+    <!-- ------------------------------------Contact Us Content---------------------------- -->
     <section>
       <div class="c-heading">
         <h1>Contact</h1>
@@ -19,11 +83,11 @@
       <section class="middle-section">
         <div class="middle-container">
           <img
-            src="foodpic.png"
+            src="/img/contact-about/foodpic.png"
             class="section-middle-image"
             alt="background image?"
           />
-          <div class="middle-info">
+          <div class="c-middle-info">
             <form class="contact-form" action="">
               <div class="title">
                 <h2>Please leave us a message!</h2>
@@ -68,19 +132,17 @@
           </div>
         </div>
       </section>
-
-      <section>
-        <div class="box">
-          <form action="">
-            <h2>Newsletter</h2>
-            <p>Keep up our latest news and events. Subscribe our newsletter</p>
-            <input type="text" placeholder="Email Address.." />
-            <button type="submit">Subscribe</button>
-          </form>
-        </div>
-      </section>
     </section>
-
+    <!-- ------------------------------------Newsletter Content---------------------------- -->
+    <div class="box">
+      <form class="news-form" action="">
+        <h2>Newsletter</h2>
+        <p>Keep up our latest news and events. Subscribe our newsletter</p>
+        <input type="text" placeholder="Email Address.." />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+    <!-- ------------------------------------Footer Content---------------------------- -->
     <footer>
       <div class="footer-content">
         <h3>Live 2 progress</h3>
@@ -119,5 +181,6 @@
         </ul>
       </div>
     </footer>
+    <script src="/script/design.js"></script>
   </body>
 </html>
