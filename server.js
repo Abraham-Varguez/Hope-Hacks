@@ -1,39 +1,35 @@
-const http =require('http');
 const express = require('express');
+const app = express();
 const path = require('path');
 
-const app = express();
+// Set the port number
+const port = 5000;
 
-
-const publicPath = path.join(__dirname, 'public');
-app.use(express.static(publicPath));
-
-app.get('/',(req,res)=>{
-    res.sendFile(path.join(publicPath,'index'))
+// Define the static file directories
+app.use(express.static(path.join(__dirname, '/public')));
+app.use('/script', express.static(path.join(__dirname, '/script')));
+app.use('/css', express.static(path.join(__dirname, '/css')));
+app.use('/img', express.static(path.join(__dirname, '/img')));
+// Define the routes
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, '/public/index.html'));
 });
 
-app.get('/',(req,res)=>{
-    res.sendFile(path.join(publicPath,'api'))
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, '/public/about.html'));
 });
 
-app.get('/',(req,res)=>{
-    res.sendFile(path.join(publicPath,'contact'))
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, '/public/api.html'));
 });
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '/public/contact.html'));
+  });
+  app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '/public/login.html'));
+  });
 
-app.get('/',(req,res)=>{
-    res.sendFile(path.join(publicPath,'about'))
+// Start the server
+app.listen(port, () => {
+  console.log(`Server is running on http://localhost:${port}`);
 });
-
-
-app.get('/404',(req,res)=>{
-    res.status(404).sendFile(path.join(publicPath,'404.html'))
-});
-
-const server = http.createServer(app);
-
-
-const port =5000;
-server.listen(port,() =>{
-    console.log(`Server is running on port ${port}`)
-})
-
