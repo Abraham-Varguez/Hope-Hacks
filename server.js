@@ -5,23 +5,23 @@ const path = require('path');
 const app = express();
 
 
-const publicPath = path.join(__dirname, 'css');
+const publicPath = path.join(__dirname, 'public');
 app.use(express.static(publicPath));
 
 app.get('/',(req,res)=>{
-    res.sendFile(path.join(publicPath,'index.html'))
+    res.sendFile(path.join(publicPath,'index'))
 });
 
-app.get('/nutrition',(req,res)=>{
-    res.sendFile(path.join(publicPath,'api.html'))
+app.get('/',(req,res)=>{
+    res.sendFile(path.join(publicPath,'api'))
 });
 
-app.get('/contact',(req,res)=>{
-    res.sendFile(path.join(publicPath,'contact.html'))
+app.get('/',(req,res)=>{
+    res.sendFile(path.join(publicPath,'contact'))
 });
 
-app.get('/about',(req,res)=>{
-    res.sendFile(path.join(publicPath,'about.html'))
+app.get('/',(req,res)=>{
+    res.sendFile(path.join(publicPath,'about'))
 });
 
 
