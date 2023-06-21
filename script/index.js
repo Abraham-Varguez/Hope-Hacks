@@ -1,43 +1,45 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const searchForm = document.querySelector("form");
-  const searchResultDiv = document.querySelector(".search-result");
-  const container = document.querySelector(".container");
-  let searchQuery = "";
-  const APP_ID = '0c675100';
-  const APP_KEY = 'dd5f0904add09381884c59ff6073e978o';
-  const PROXY_URL = 'https://cors-anywhere.herokuapp.com/';
+const searchForm = document.querySelector('form');
+const searchResultDiv = document.querySelector('.search-result');
+const container = document.querySelector('.container');
+let searchQuery='';
+const APP_ID = '6a3f3274';
+const  APP_key ='e98b7066b1e110e26ed03a907ce97899';
 
-  searchForm.addEventListener("submit", async (e) => {
-    e.preventDefault();
-    searchQuery = e.target.querySelector("input").value;
-    await fetchAPI();
-  });
-
-  async function fetchAPI() {
-    const baseURL = `${PROXY_URL}https://api.edamam.com/search?q=pizza${searchQuery}&app_id=${APP_ID}&app_key=${APP_KEY}&from=0&to=20`;
-    const response = await fetch(baseURL);
-    const data = await response.json();
-    generateHTML(data.hits);
-    console.log(data);
-  }
-
-  function generateHTML(results) {
-    container.classList.remove("initial");
-    let generatedHTML = "";
-    results.map((result) => {
-      generatedHTML += `
-        <div class="item">
-          <img src="${result.recipe.image}" alt="img">
-          <div class="flex-container">
-            <h1 class="title">${result.recipe.label}</h1>
-            <a class="view-btn" target="_blank" href="${result.recipe.url}">View Recipe</a>
-          </div>
-          <p class="item-data">Calories: ${result.recipe.calories.toFixed(2)}</p>
-          <p class="item-data">Diet label: ${result.recipe.dietLabels.length > 0 ? result.recipe.dietLabels : "No Data Found"}</p>
-          <p class="item-data">Health labels: ${result.recipe.healthLabels}</p>
-        </div>
-      `;
-    });
-    searchResultDiv.innerHTML = generatedHTML;
-  }
+searchForm.addEventListener('submit',(e)=>{
+  e.preventDefault();
+  searchQuery = e.target.querySelector('input').value;
+  fetchAPI();
 });
+
+async function fetchAPI(){
+  const baseURL = `https://api.edamam.com/search?q=${searchQuery}&app_id=${APP_ID}&app_key=${APP_key}&to=20`;
+  const response = await fetch(baseURL);
+  const data = await response.json();
+  generateHTML(data.hits);
+  console.log(data)
+
+}
+
+function generateHTML(results){
+  let generatedHTML ='';
+  results.map(result =>{
+    generatedHTML +=
+    `<div class="item">
+    <img src="${result.recipe.image}" alt="#">
+    <div class="flex-container">
+        <h1 class="title">${result.recipe.label}</h1>
+    <a href="${result.recipe.url}" target="_blank">View Recipe</a>
+</div>
+<p class="item-data"> Calories:${result.recipe.calories.toFixed(2)}</p>
+<p class="item-data">Weigth:${result.recipe.totalWeight.toFixed(2)} </p>
+<p class="item-data">Nationality:${result.recipe.cuisineType} </p>
+<p class="item-data">Label:${result.recipe.dietLabels} </p>
+
+</div>
+</div>`
+
+  });
+ searchResultDiv.innerHTML = generatedHTML;
+}
+// dietLabels
+// 10,000 month	API CALLS
