@@ -74,6 +74,13 @@ body {
   flex: 1;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20rem 0;
+}
+
 .side-nav {
   font-size: 2rem;
   list-style: none;
@@ -1424,4 +1431,3 @@ li {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   transform: translateY(-2px);
 }/*# sourceMappingURL=main.css.map */
-
