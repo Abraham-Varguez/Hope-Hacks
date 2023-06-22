@@ -110,3 +110,49 @@
   left: 85%;
   top: 4%;
 }
+
+.btn-api {
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    position: relative;
+    font-size: 1.8rem;
+    z-index: 0;
+    background-color: var(--primary-color);
+    color: var(--background-color-white);
+  }
+
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-dark);
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+    background-color: var(--primary-color);
+  }
+}
