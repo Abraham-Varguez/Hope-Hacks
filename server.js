@@ -1,7 +1,6 @@
 const express = require("express");
 const app = express();
 const path = require("path");
-const mysql = require("mysql2");
 
 // Set the port number
 const port = 5000;
@@ -11,25 +10,32 @@ app.use(express.static(path.join(__dirname, "/public")));
 app.use("/script", express.static(path.join(__dirname, "/script")));
 app.use("/css", express.static(path.join(__dirname, "/css")));
 app.use("/img", express.static(path.join(__dirname, "/img")));
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
 // Define the routes
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "index.html"));
 });
 
-app.get("/about", (req, res) => {
+app.get("/public/about.html", (req, res) => {
   res.sendFile(path.join(__dirname, "about.html"));
 });
 
-app.get("/api", (req, res) => {
+app.get("/public/api.html", (req, res) => {
   res.sendFile(path.join(__dirname, "api.html"));
 });
-app.get("/contact", (req, res) => {
+app.get("/public/contact.html", (req, res) => {
   res.sendFile(path.join(__dirname, "contact.html"));
 });
-app.get("login", (req, res) => {
+app.get("/public/login.html", (req, res) => {
   res.sendFile(path.join(__dirname, "login.html"));
+});
+
+app.use((req, res, next) => {
+  res.status(404).sendFile(path.join(__dirname, "/public/404.html"));
+});
+
+// Start the server
+app.listen(port, () => {
+  console.log(`Server is running on http://localhost:${port}`);
 });
 
 // Start the server
