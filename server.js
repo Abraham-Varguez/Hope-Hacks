@@ -18,17 +18,17 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "index.html"));
 });
 
-app.get("/", (req, res) => {
+app.get("/about", (req, res) => {
   res.sendFile(path.join(__dirname, "about.html"));
 });
 
-app.get("/", (req, res) => {
+app.get("/api", (req, res) => {
   res.sendFile(path.join(__dirname, "api.html"));
 });
-app.get("/", (req, res) => {
+app.get("/contact", (req, res) => {
   res.sendFile(path.join(__dirname, "contact.html"));
 });
-app.get("/", (req, res) => {
+app.get("login", (req, res) => {
   res.sendFile(path.join(__dirname, "login.html"));
 });
 
