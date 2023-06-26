@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const path = require("path");
+const mysql = require("mysql2");
 
 // Set the port number
 const port = 5000;
@@ -29,13 +30,12 @@ app.get("/public/login.html", (req, res) => {
   res.sendFile(path.join(__dirname, "login.html"));
 });
 
-app.use((req, res, next) => {
-  res.status(404).sendFile(path.join(__dirname, "/public/404.html"));
+app.get("/public/survey.html", (req, res) => {
+  res.sendFile(path.join(__dirname, "survey.html"));
 });
 
-// Start the server
-app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
+app.use((req, res, next) => {
+  res.status(404).sendFile(path.join(__dirname, "/public/404.html"));
 });
 
 // Start the server
