@@ -1,6 +1,9 @@
 # Hope-Hacks
 
-This is the API:****************************\*\*\*\*****************************\*\*\*****************************\*\*\*\*****************************
+BEFORE ANYTHING!!!!!:
+Run "node server.js" on terminal to start the server!
+
+This is the API:****\*\*\*\*****\*\*\*\*****\*\*\*\*****\*\*\*\*****\*\*\*\*****\*\*\*\*****\*\*\*\*****\*\*\*****\*\*\*\*****\*\*\*\*****\*\*\*\*****\*\*\*\*****\*\*\*\*****\*\*\*\*****\*\*\*\*****
 
 Here's a breakdown of the code:
 Event Listener:
@@ -17,7 +20,7 @@ It iterates over each recipe result using the map method and generates HTML for 
 The recipe details, such as label, image, calories, weight, cuisine type, diet labels, and recipe URL, are extracted from each result and inserted into the generated HTML markup.
 The generated HTML is then assigned to the innerHTML property of the searchResultDiv element, replacing any existing content with the new recipe search results.
 
-This is a explination of the Server.js connecting to the API and the npm packages that needed to be downloaded:******\*\*******\*\*\*\*******\*\*******
+This is a explination of the Server.js connecting to the API and the npm packages that needed to be downloaded:**\*\***\*\***\*\***\*\*\*\***\*\***\*\***\*\***
 
 This code snippet demonstrates a basic setup for an Express.js server that serves static files and defines routes for different paths. It can be used as a starting point for building web applications with Express.js. Let's break it down and explain it step by step:
 
@@ -103,7 +106,7 @@ node server.js
 You should see the console message indicating that the server is running on the specified port. You can then visit the URLs corresponding to the defined routes (e.g., http://localhost:5000, http://localhost:5000/about, etc.) in your web browser to access the respective HTML files.
 Feel free to modify the code according to your application's needs and extend it with additional routes and functionality.
 
-This is a explination of the Server.js connecting to the Database Using MySQL and the npm packages that needed to be downloaded:**************************************************************\*\***************************************************************
+This is a explination of the Server.js connecting to the Database Using MySQL and the npm packages that needed to be downloaded:**************\*\***************\*\***************\*\***************\*\***************\*\***************\*\***************\*\***************
 
 ## Database Setup
 
@@ -172,6 +175,8 @@ If a user tries to access a page that doesn't exist on the server, the server wi
 That's it! You now have a basic understanding of how the database is set up and how to interact with the server for user registration and login.
 
 Example:
+
+<!-- IMAGES: -->
 
 ![Login on Website](/img/readme-img/Screen%20Shot%202023-06-23%20at%201.20.58%20PM.png)
 ![Database Information Stored](/img/readme-img/Screen%20Shot%202023-06-23%20at%201.21.56%20PM.png)
