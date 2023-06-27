@@ -17,9 +17,6 @@
     "node": "^20.3.1",
     "sass": "^1.63.4"
   },
-  "devDependencies": {
-    "node-sass": "^9.0.0"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Abraham-Varguez/Hope-Hacks.git"
