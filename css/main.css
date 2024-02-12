@@ -901,6 +901,21 @@ a {
   color: var(--secondary-color-light);
 }
 
+.search {
+  display: flex;
+  gap: 4rem;
+}
+.search__button {
+  font-family: inherit;
+  font-size: 2.5rem;
+  color: var(--background-color-white);
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 100px;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
 .search__input {
   font-family: inherit;
   font-size: 2.5rem;
@@ -919,7 +934,7 @@ a {
   width: 43vw;
   background-color: var(--background-color-white);
 }
-.search__input:focus + .search__button {
+.search__input:focus {
   background-color: var(--background-color-white);
 }
 

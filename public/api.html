@@ -90,15 +90,17 @@
       <div class="container">
         <div class="search-container">
           <h1 class="brand">The Food Dictionary</h1>
-          <form class="search">
+          <form class="search" onsubmit="return performSearch(event)">
             <input
               class="api-search search__input"
               type="text"
-              placeholder="search your meal..."
+              id="searchInput"
+              placeholder="Search your meal..."
             />
+            <button type="submit" class="search__button">Search</button>
           </form>
         </div>
-        <div class="search-result"></div>
+        <div class="search-result" id="resultContainer"></div>
       </div>
     </section>
     <footer>

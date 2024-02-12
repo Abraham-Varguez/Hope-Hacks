@@ -74,6 +74,20 @@
 }
 
 .search {
+  display: flex;
+  gap: 4rem;
+
+  &__button {
+    font-family: inherit;
+    font-size: 2.5rem;
+    color: var(--background-color-white);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 100px;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
   &__input {
     font-family: inherit;
     font-size: 2.5rem;
@@ -94,7 +108,7 @@
     }
   }
 
-  &__input:focus + &__button {
+  &__input:focus {
     background-color: var(--background-color-white);
   }
 }
