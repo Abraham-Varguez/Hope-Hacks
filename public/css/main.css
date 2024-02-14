@@ -259,7 +259,7 @@ a {
 }
 
 .img-header {
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.442), rgba(0, 0, 0, 0.512)), url("../img/h-image/hero.jpg");
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.442), rgba(0, 0, 0, 0.512)), url("../../img/h-image/hero.jpg");
   height: 96vh;
   background-size: cover;
   background-position: top;
