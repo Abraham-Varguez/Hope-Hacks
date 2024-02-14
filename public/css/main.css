@@ -127,7 +127,8 @@ body {
   transform: scaleY(1);
   width: 100%;
 }
-.side-nav__link:link, .side-nav__link:visited {
+.side-nav__link:link,
+.side-nav__link:visited {
   color: var(--secondary-color-light);
   text-decoration: none;
   text-transform: uppercase;
@@ -139,13 +140,15 @@ body {
   align-items: center;
 }
 @media only screen and (max-width: 57.75em) {
-  .side-nav__link:link, .side-nav__link:visited {
+  .side-nav__link:link,
+  .side-nav__link:visited {
     justify-content: center;
     padding: 2rem;
   }
 }
 @media only screen and (max-width: 37.5em) {
-  .side-nav__link:link, .side-nav__link:visited {
+  .side-nav__link:link,
+  .side-nav__link:visited {
     flex-direction: column;
     padding: 1.5rem;
     text-align: center;
@@ -259,7 +262,12 @@ a {
 }
 
 .img-header {
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.442), rgba(0, 0, 0, 0.512)), url("../../img/h-image/hero.jpg");
+  background: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.442),
+      rgba(0, 0, 0, 0.512)
+    ),
+    url("/img/h-image/hero.jpg");
   height: 96vh;
   background-size: cover;
   background-position: top;
@@ -393,7 +401,8 @@ a {
   box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.45);
   z-index: 20;
 }
-.testimonial-section__pictures:hover .testimonial-section__pictures__photo:not(:hover) {
+.testimonial-section__pictures:hover
+  .testimonial-section__pictures__photo:not(:hover) {
   transform: scale(0.92);
 }
 
@@ -438,13 +447,25 @@ a {
   transform: rotateY(180deg);
 }
 .card__side--back-1 {
-  background-image: linear-gradient(to right bottom, var(--secondary-color-light), var(--secondary-color-dark));
+  background-image: linear-gradient(
+    to right bottom,
+    var(--secondary-color-light),
+    var(--secondary-color-dark)
+  );
 }
 .card__side--back-2 {
-  background-image: linear-gradient(to right bottom, var(--primary-color-light), var(--primary-color-dark));
+  background-image: linear-gradient(
+    to right bottom,
+    var(--primary-color-light),
+    var(--primary-color-dark)
+  );
 }
 .card__side--back-3 {
-  background-image: linear-gradient(to right bottom, var(--tertiary-color-light), var(--tertiary-color-dark));
+  background-image: linear-gradient(
+    to right bottom,
+    var(--tertiary-color-light),
+    var(--tertiary-color-dark)
+  );
 }
 .card:hover .card__side--front {
   transform: rotateY(-180deg);
@@ -469,13 +490,28 @@ a {
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 .card__picture--1 {
-  background-image: linear-gradient(to right bottom, var(--secondary-color-light), var(--secondary-color-dark)), url(/img/h-image/cherry.jpg);
+  background-image: linear-gradient(
+      to right bottom,
+      var(--secondary-color-light),
+      var(--secondary-color-dark)
+    ),
+    url(/img/h-image/cherry.jpg);
 }
 .card__picture--2 {
-  background-image: linear-gradient(to right bottom, var(--primary-color-light), var(--primary-color-dark)), url(/img/h-image/apples.jpg);
+  background-image: linear-gradient(
+      to right bottom,
+      var(--primary-color-light),
+      var(--primary-color-dark)
+    ),
+    url(/img/h-image/apples.jpg);
 }
 .card__picture--3 {
-  background-image: linear-gradient(to right bottom, var(--tertiary-color-light), var(--tertiary-color-dark)), url(/img/h-image/dragon-fruit.jpg);
+  background-image: linear-gradient(
+      to right bottom,
+      var(--tertiary-color-light),
+      var(--tertiary-color-dark)
+    ),
+    url(/img/h-image/dragon-fruit.jpg);
 }
 .card__heading {
   font-size: 2.8rem;
@@ -495,13 +531,25 @@ a {
   box-decoration-break: clone;
 }
 .card__heading-span--1 {
-  background-image: linear-gradient(to right bottom, rgba(203, 206, 182, 0.8), rgba(40, 60, 42, 0.8));
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(203, 206, 182, 0.8),
+    rgba(40, 60, 42, 0.8)
+  );
 }
 .card__heading-span--2 {
-  background-image: linear-gradient(to right bottom, rgba(204, 163, 170, 0.8), rgba(53, 29, 33, 0.8));
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(204, 163, 170, 0.8),
+    rgba(53, 29, 33, 0.8)
+  );
 }
 .card__heading-span--3 {
-  background-image: linear-gradient(to right bottom, rgba(88, 136, 213, 0.8), rgba(18, 28, 44, 0.8));
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(88, 136, 213, 0.8),
+    rgba(18, 28, 44, 0.8)
+  );
 }
 .card__details {
   padding: 3rem;
@@ -542,11 +590,19 @@ a {
 }
 
 .contact-body {
-  background-image: linear-gradient(var(--background-color-light), var(--background-color-dark));
+  background-image: linear-gradient(
+    var(--background-color-light),
+    var(--background-color-dark)
+  );
 }
 
 .c-img-header {
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.442), rgba(0, 0, 0, 0.512)), url("/img/contact-about/connect.jpg");
+  background: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.442),
+      rgba(0, 0, 0, 0.512)
+    ),
+    url("/img/contact-about/connect.jpg");
   height: 96vh;
   background-size: cover;
   background-position: top;
@@ -697,7 +753,7 @@ a {
   margin-right: 10px;
 }
 
-.contact-form .action input[type=submit] {
+.contact-form .action input[type="submit"] {
   background: white;
   color: black;
 }
@@ -841,11 +897,20 @@ a {
 }
 
 .a-background {
-  background-image: linear-gradient(to right bottom, rgba(59, 88, 56, 0.8), rgba(127, 187, 136, 0.8));
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(59, 88, 56, 0.8),
+    rgba(127, 187, 136, 0.8)
+  );
 }
 
 .a-img-header {
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.556), rgba(0, 0, 0, 0.12)), url("/img/api-image/fruit.jpg");
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.556),
+      rgba(0, 0, 0, 0.12)
+    ),
+    url("/img/api-image/fruit.jpg");
   height: 96vh;
   width: auto;
   background-size: cover;
@@ -989,7 +1054,12 @@ a {
   align-items: center;
   min-height: 100vh;
   width: auto;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.626), rgba(0, 0, 0, 0.171)), url("/img/login-body.jpg");
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.626),
+      rgba(0, 0, 0, 0.171)
+    ),
+    url("/img/login-body.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1140,11 +1210,19 @@ a {
 }
 
 .about-body {
-  background-image: linear-gradient(var(--background-color-light), var(--background-color-dark));
+  background-image: linear-gradient(
+    var(--background-color-light),
+    var(--background-color-dark)
+  );
 }
 
 .ab-img-header {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.756), rgba(0, 0, 0, 0.409)), url("/img/contact-about/about-hero.jpg");
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.756),
+      rgba(0, 0, 0, 0.409)
+    ),
+    url("/img/contact-about/about-hero.jpg");
   height: 96vh;
   background-size: cover;
   background-position: top;
@@ -1382,7 +1460,12 @@ li {
   }
 }
 .s-img-header {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.442), rgba(0, 0, 0, 0.512)), url("/img/sur-img/heros.png");
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.442),
+      rgba(0, 0, 0, 0.512)
+    ),
+    url("/img/sur-img/heros.png");
   height: 96vh;
   background-size: cover;
   background-position: top;
@@ -1562,7 +1645,8 @@ li {
     transform: scale(1);
   }
 }
-.btn:link, .btn:visited {
+.btn:link,
+.btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.8rem 5rem;
@@ -1619,7 +1703,8 @@ li {
   animation-fill-mode: backwards;
 }
 
-.btn-text:link, .btn-text:visited {
+.btn-text:link,
+.btn-text:visited {
   font-size: 1.6rem;
   color: var(--secondary-color);
   display: inline-block;
@@ -1640,7 +1725,8 @@ li {
   left: 85%;
   top: 4%;
 }
-.btn-login:link, .btn-login:visited {
+.btn-login:link,
+.btn-login:visited {
   font-size: 2rem;
   font-weight: 500;
   color: aliceblue;
@@ -1657,7 +1743,8 @@ li {
   transform: translateY(-2px);
 }
 
-.btn-api:link, .btn-api:visited {
+.btn-api:link,
+.btn-api:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 1rem 3rem;
@@ -1695,4 +1782,4 @@ li {
   z-index: -1;
   transition: all 0.4s;
   background-color: var(--primary-color);
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
